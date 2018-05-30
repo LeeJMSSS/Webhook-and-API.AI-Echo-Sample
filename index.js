@@ -32,7 +32,7 @@ restService.post("/echo", function(req, res) {
 
 restService.post("/audio", function(req, res) {
   var text = "";
-  switch (req.body.queryResult.parameters.AudioSample.toLowerCase()) {
+  switch (req.body.queryResult.parameters['AudioSample'].toLowerCase()) {
     //Speech Synthesis Markup Language 
     case "music one":
       text =
