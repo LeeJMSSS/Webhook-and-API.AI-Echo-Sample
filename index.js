@@ -117,9 +117,12 @@ restService.post("/audio", function(req, res) {
       break;
   }
   return res.json({
+	    /*
     text: text,
     displayText: text,
     source: "webhook-echo-sample"
+    */
+    'fulfillmentText': text, 
   });
 });
 
