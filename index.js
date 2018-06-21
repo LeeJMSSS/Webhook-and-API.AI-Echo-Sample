@@ -34,19 +34,19 @@ restService.post("/audio", function(req, res) {
   var text = "";
   switch (req.body.queryResult.parameters['AudioSample'].toLowerCase()) {
     //Speech Synthesis Markup Language 
-    case "one":
+    case "느낌이 좋아":
     //feel good
       text =
         //'<speak><audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
         '<speak><audio src="https://storage.googleapis.com/storage_for_music/feel%20good.mp3">did not get your audio file</audio></speak>';
       break;
-    case "two":
+    case "다시 우리":
     //again
       text =
         '<speak><audio src="https://storage.googleapis.com/storage_for_music/%EA%B8%B8%EA%B5%AC%EB%B4%89%EA%B5%AC%20GB9%20-%20%EB%8B%A4%EC%8B%9C%2C%20%EC%9A%B0%EB%A6%AC%20Wed%20Official%20MV.mp3">did not get your audio file</audio></speak>';
       break;
     //kan
-    case "three":
+    case "캥거루":
       text =
         '<speak><audio src="https://storage.googleapis.com/storage_for_music/Wanna%20One%20(%EC%9B%8C%EB%84%88%EC%9B%90)%20Kangaroo%20(%EC%BA%A5%EA%B1%B0%EB%A3%A8)%20(feat.%20ZICO)%20Lyrics%20%5BColor%20Coded%20HanRomEng%5D.mp3">did not get your audio file</audio></speak>';
       break;
